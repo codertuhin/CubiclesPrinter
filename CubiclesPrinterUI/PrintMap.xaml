@@ -1,0 +1,146 @@
+﻿<UserControl
+    x:Class="CubiclesPrinterUI.PrintMap"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:converters="clr-namespace:CubiclesPrinterUI.Converters"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="300"
+    d:DesignWidth="300"
+    mc:Ignorable="d">
+    <UserControl.Resources>
+        <converters:FootprintsConverter x:Key="FootprintsConverter" />
+        <converters:MapLabelPositionConverter x:Key="MapLabelPositionConverter" />
+        <converters:MapLabelVisibilityConverter x:Key="MapLabelVisibilityConverter" />
+    </UserControl.Resources>
+
+    <Grid Grid.Row="2">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="PrinterHighlight">
+                <VisualState x:Name="Glow">
+                    <Storyboard>
+                        <DoubleAnimationUsingKeyFrames
+                            RepeatBehavior="Forever"
+                            Storyboard.TargetName="PrinterGlow"
+                            Storyboard.TargetProperty="Opacity">
+                            <SplineDoubleKeyFrame KeyTime="0:0:0.0" Value="0" />
+                            <SplineDoubleKeyFrame KeyTime="0:0:0.5" Value="1" />
+                            <SplineDoubleKeyFrame KeyTime="0:0:1" Value="0" />
+                        </DoubleAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+        <Image Margin="24,48,24,48" Source="pack://application:,,,/CubiclesPrinterUI;component/Assets/PrinterMap/printer-map.png" />
+
+        <Image Margin="24,48,24,48">
+            <Image.Source>
+                <MultiBinding Converter="{StaticResource FootprintsConverter}">
+                    <Binding Path="UserPC" />
+                    <Binding Path="SelectedPrinter" />
+                </MultiBinding>
+            </Image.Source>
+        </Image>
+
+        <!--  Location Label  -->
+        <Grid
+            x:Name="UserLocationLabel"
+            Margin="{Binding UserPC, Converter={StaticResource MapLabelPositionConverter}, ConverterParameter='CubicleLabel'}"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Polygon
+                Margin="0,0,0,-1"
+                HorizontalAlignment="Center"
+                Fill="{StaticResource PrimaryGreen}"
+                Points="0,12 6,0 12,12"
+                Visibility="{Binding UserPC, Converter={StaticResource MapLabelVisibilityConverter}, ConverterParameter='Bottom'}" />
+            <Border Grid.Row="1" Background="{StaticResource PrimaryGreen}">
+                <TextBlock
+                    Margin="12,6,12,6"
+                    FontSize="14"
+                    FontWeight="{StaticResource SemiBoldWeight}"
+                    Foreground=" White"
+                    Text="You are here" />
+            </Border>
+
+            <Polygon
+                Grid.Row="1"
+                Grid.Column="1"
+                Margin="-1,0,0,0"
+                VerticalAlignment="Center"
+                Fill="{StaticResource PrimaryGreen}"
+                Points="0,0 12,6 0,12"
+                Visibility="{Binding UserPC, Converter={StaticResource MapLabelVisibilityConverter}, ConverterParameter='Side'}" />
+
+            <Polygon
+                Grid.Row="2"
+                Margin="0,-1,0,0"
+                HorizontalAlignment="Center"
+                Fill="{StaticResource PrimaryGreen}"
+                Points="0,0 12,0 6,12"
+                Visibility="{Binding UserPC, Converter={StaticResource MapLabelVisibilityConverter}, ConverterParameter='Top'}" />
+        </Grid>
+
+        <!--  Printer Label  -->
+        <Grid
+            Margin="{Binding SelectedPrinter, Converter={StaticResource MapLabelPositionConverter}, ConverterParameter='PrinterLabel'}"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Polygon
+                Margin="0,0,0,-1"
+                HorizontalAlignment="Center"
+                Fill="{StaticResource HighlightPurple}"
+                Points="0,12 12,12 6,0" />
+
+            <Border Grid.Row="1" Background="{StaticResource HighlightPurple}">
+                <TextBlock
+                    Margin="12,6,12,6"
+                    FontSize="14"
+                    FontWeight="{StaticResource SemiBoldWeight}"
+                    Foreground=" White"
+                    Text="Your printer is here" />
+            </Border>
+
+            <ComboBox
+                Grid.Row="2"
+                ItemsSource="{Binding Printers}"
+                SelectedItem="{Binding SelectedPrinter, Mode=TwoWay}"
+                Template="{StaticResource ChangePrinterCombo}">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding DisplayName}" />
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+        </Grid>
+
+        <!--  Printer Glow  -->
+        <Border
+            x:Name="PrinterGlow"
+            Width="17.5"
+            Height="17.5"
+            Margin="{Binding SelectedPrinter, Converter={StaticResource MapLabelPositionConverter}, ConverterParameter='PrinterGlow'}"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="{StaticResource HalfPrimaryGreen}"
+            BorderBrush="{StaticResource PrimaryGreen}"
+            BorderThickness="2"
+            Opacity="0" />
+    </Grid>
+</UserControl>

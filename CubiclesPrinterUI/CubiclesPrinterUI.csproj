@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EF8D78E2-B4B0-4338-B49A-33FADBF6370F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CubiclesPrinterUI</RootNamespace>
+    <AssemblyName>CubiclesPrinterUI</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\PCData.cs" />
+    <Compile Include="Classes\PrinterData.cs" />
+    <Compile Include="Controller\EnvironmentDataController.cs" />
+    <Compile Include="Controller\MainController.cs" />
+    <Compile Include="Controls\IconButton.cs" />
+    <Compile Include="Converters\FootprintsConverter.cs" />
+    <Compile Include="Converters\MapLabelVisibilityConverter.cs" />
+    <Compile Include="Converters\MapLabelPositionConverter.cs" />
+    <Compile Include="Converters\BooleanToVisibilityConverter.cs" />
+    <Compile Include="Converters\RadioButtonCheckedConverter.cs" />
+    <Compile Include="Model\PrintingControlModel.cs" />
+    <Compile Include="ProgressWindow.xaml.cs">
+      <DependentUpon>ProgressWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\PrintingControlWindow.xaml.cs">
+      <DependentUpon>PrintingControlWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PrintMap.xaml.cs">
+      <DependentUpon>PrintMap.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\PrintingControlViewModel.cs" />
+    <Compile Include="ViewModel\ViewModelBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Fonts\Ubuntu\Ubuntu-B.ttf" />
+    <Resource Include="Assets\Fonts\Ubuntu\Ubuntu-BI.ttf" />
+    <Resource Include="Assets\Fonts\Ubuntu\Ubuntu-L.ttf" />
+    <Resource Include="Assets\Fonts\Ubuntu\Ubuntu-LI.ttf" />
+    <Resource Include="Assets\Fonts\Ubuntu\Ubuntu-M.ttf" />
+    <Resource Include="Assets\Fonts\Ubuntu\Ubuntu-MI.ttf" />
+    <Resource Include="Assets\Fonts\Ubuntu\Ubuntu-R.ttf" />
+    <Resource Include="Assets\Fonts\Ubuntu\Ubuntu-RI.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\PrinterMap\backdesk-pc-black-whiteprinter.png" />
+    <Resource Include="Assets\PrinterMap\backdesk-pc-colorprinter.png" />
+    <Resource Include="Assets\PrinterMap\conference-backprinter.png" />
+    <Resource Include="Assets\PrinterMap\conference-black-whiteprinter.png" />
+    <Resource Include="Assets\PrinterMap\conference-colorprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle01-pc-backprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle01-pc-black-whiteprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle01-pc-colorprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle02-pc-backprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle02-pc-black-whiteprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle02-pc-colorprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle03-pc-backprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle03-pc-black-whiteprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle03-pc-colorprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle04-pc-backprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle04-pc-black-whiteprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle04-pc-colorprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle05-pc-backprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle05-pc-black-whiteprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle05-pc-colorprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle06-pc-backprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle06-pc-black-whiteprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle06-pc-colorprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle07-pc-backprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle07-pc-black-whiteprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle07-pc-colorprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle08-pc-backprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle08-pc-black-whiteprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle08-pc-colorprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle09-pc-backprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle09-pc-black-whiteprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle09-pc-colorprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle10-pc-backprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle10-pc-black-whiteprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle10-pc-colorprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle11-pc-backprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle11-pc-black-whiteprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle11-pc-colorprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle12-pc-backprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle12-pc-black-whiteprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle12-pc-colorprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle13-pc-backprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle13-pc-black-whiteprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle13-pc-colorprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle14-pc-backprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle14-pc-black-whiteprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle14-pc-colorprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle15-pc-backprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle15-pc-black-whiteprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle15-pc-colorprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle16-pc-backprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle16-pc-black-whiteprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle16-pc-colorprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle17-pc-backprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle17-pc-black-whiteprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle17-pc-colorprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle18-pc-backprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle18-pc-black-whiteprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle18-pc-colorprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle19-pc-backprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle19-pc-black-whiteprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle19-pc-colorprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle20-pc-backprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle20-pc-black-whiteprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle20-pc-colorprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle21-pc-backprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle21-pc-black-whiteprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle21-pc-colorprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle22-pc-backprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle22-pc-black-whiteprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle22-pc-colorprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle23-pc-backprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle23-pc-black-whiteprinter.png" />
+    <Resource Include="Assets\PrinterMap\cubicle23-pc-colorprinter.png" />
+    <Resource Include="Assets\PrinterMap\printer-map.png" />
+    <Resource Include="Assets\PrinterMap\printerleft-pc-backprinter.png" />
+    <Resource Include="Assets\PrinterMap\printerright-pc-backprinter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="ProgressWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\PrintingControlWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PrintMap.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Resources.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CubiclesAPI\Cubicles.csproj">
+      <Project>{d08f4ede-b997-46af-a2b1-ebd927ff1010}</Project>
+      <Name>Cubicles</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CubiclesPrinterLib\CubiclesPrinterLib.csproj">
+      <Project>{ca4547ec-4f9a-42a5-8aed-97e644c588c0}</Project>
+      <Name>CubiclesPrinterLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

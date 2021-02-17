@@ -1,0 +1,9 @@
+I:\Upwork\PrintingControl\CubiclesPrinter\CubiclesAPI\bin\Debug\Cubicles.dll
+I:\Upwork\PrintingControl\CubiclesPrinter\CubiclesAPI\bin\Debug\Cubicles.pdb
+I:\Upwork\PrintingControl\CubiclesPrinter\CubiclesAPI\bin\Debug\Newtonsoft.Json.dll
+I:\Upwork\PrintingControl\CubiclesPrinter\CubiclesAPI\bin\Debug\RestSharp.dll
+I:\Upwork\PrintingControl\CubiclesPrinter\CubiclesAPI\bin\Debug\Newtonsoft.Json.xml
+I:\Upwork\PrintingControl\CubiclesPrinter\CubiclesAPI\obj\Debug\Cubicles.csprojResolveAssemblyReference.cache
+I:\Upwork\PrintingControl\CubiclesPrinter\CubiclesAPI\obj\Debug\Cubicles.csproj.CoreCompileInputs.cache
+I:\Upwork\PrintingControl\CubiclesPrinter\CubiclesAPI\obj\Debug\Cubicles.dll
+I:\Upwork\PrintingControl\CubiclesPrinter\CubiclesAPI\obj\Debug\Cubicles.pdb

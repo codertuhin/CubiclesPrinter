@@ -1,0 +1,191 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CubiclesPrinterLib", "CubiclesPrinterLib\CubiclesPrinterLib.csproj", "{CA4547EC-4F9A-42A5-8AED-97E644C588C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Installers", "Installers", "{E8EF7251-E634-41D4-918B-1807DB2E95DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CubiclesPrinterSetupCustomAction", "Installers\CubiclesPrinterSetupCustomAction\CubiclesPrinterSetupCustomAction.csproj", "{5BD928FE-4DCC-43CF-AC54-E16572464991}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cubicles", "CubiclesAPI\Cubicles.csproj", "{D08F4EDE-B997-46AF-A2B1-EBD927FF1010}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CubiclesAPITest", "CubiclesAPITest\CubiclesAPITest.csproj", "{BCBE560A-0477-496F-9C92-BB5A34F250B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrintersEval", "PrintersEval\PrintersEval.csproj", "{E4B6A0A0-CB8F-4403-A48D-15C8D5A5A009}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CubiclesPrinterWPF", "CubiclesPrinterWPF\CubiclesPrinterWPF.csproj", "{67237ECF-6441-4807-B1EE-19B221470AB3}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CubiclesPrinterSetup_x64", "Installers\CubiclesPrinterSetup_x64\CubiclesPrinterSetup_x64.vdproj", "{F4583FC6-CDE9-4334-9BE2-635924DDEDE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CubiclesPrinterUI", "CubiclesPrinterUI\CubiclesPrinterUI.csproj", "{EF8D78E2-B4B0-4338-B49A-33FADBF6370F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CubiclesPrinterUIDemo", "CubiclesPrinterUIDemo\CubiclesPrinterUIDemo.csproj", "{1CBEB09B-AAEF-4FE0-9B7D-1726AB58B67E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CubiclesPrinterApp", "CubiclesPrinterApp\CubiclesPrinterApp.csproj", "{8C4A534B-0A97-4D3B-8BEC-587C70881BBA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA4547EC-4F9A-42A5-8AED-97E644C588C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA4547EC-4F9A-42A5-8AED-97E644C588C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA4547EC-4F9A-42A5-8AED-97E644C588C0}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{CA4547EC-4F9A-42A5-8AED-97E644C588C0}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{CA4547EC-4F9A-42A5-8AED-97E644C588C0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CA4547EC-4F9A-42A5-8AED-97E644C588C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA4547EC-4F9A-42A5-8AED-97E644C588C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA4547EC-4F9A-42A5-8AED-97E644C588C0}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{CA4547EC-4F9A-42A5-8AED-97E644C588C0}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{CA4547EC-4F9A-42A5-8AED-97E644C588C0}.Release|x86.ActiveCfg = Release|Any CPU
+		{5BD928FE-4DCC-43CF-AC54-E16572464991}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BD928FE-4DCC-43CF-AC54-E16572464991}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BD928FE-4DCC-43CF-AC54-E16572464991}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{5BD928FE-4DCC-43CF-AC54-E16572464991}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5BD928FE-4DCC-43CF-AC54-E16572464991}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BD928FE-4DCC-43CF-AC54-E16572464991}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BD928FE-4DCC-43CF-AC54-E16572464991}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{5BD928FE-4DCC-43CF-AC54-E16572464991}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{5BD928FE-4DCC-43CF-AC54-E16572464991}.Release|x86.ActiveCfg = Release|Any CPU
+		{D08F4EDE-B997-46AF-A2B1-EBD927FF1010}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D08F4EDE-B997-46AF-A2B1-EBD927FF1010}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D08F4EDE-B997-46AF-A2B1-EBD927FF1010}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{D08F4EDE-B997-46AF-A2B1-EBD927FF1010}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{D08F4EDE-B997-46AF-A2B1-EBD927FF1010}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D08F4EDE-B997-46AF-A2B1-EBD927FF1010}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D08F4EDE-B997-46AF-A2B1-EBD927FF1010}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D08F4EDE-B997-46AF-A2B1-EBD927FF1010}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{D08F4EDE-B997-46AF-A2B1-EBD927FF1010}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{D08F4EDE-B997-46AF-A2B1-EBD927FF1010}.Release|x86.ActiveCfg = Release|Any CPU
+		{BCBE560A-0477-496F-9C92-BB5A34F250B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCBE560A-0477-496F-9C92-BB5A34F250B2}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{BCBE560A-0477-496F-9C92-BB5A34F250B2}.Debug|x86.ActiveCfg = Debug|x86
+		{BCBE560A-0477-496F-9C92-BB5A34F250B2}.Debug|x86.Build.0 = Debug|x86
+		{BCBE560A-0477-496F-9C92-BB5A34F250B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCBE560A-0477-496F-9C92-BB5A34F250B2}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{BCBE560A-0477-496F-9C92-BB5A34F250B2}.Release|Mixed Platforms.Build.0 = Release|x86
+		{BCBE560A-0477-496F-9C92-BB5A34F250B2}.Release|x86.ActiveCfg = Release|x86
+		{BCBE560A-0477-496F-9C92-BB5A34F250B2}.Release|x86.Build.0 = Release|x86
+		{E4B6A0A0-CB8F-4403-A48D-15C8D5A5A009}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4B6A0A0-CB8F-4403-A48D-15C8D5A5A009}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{E4B6A0A0-CB8F-4403-A48D-15C8D5A5A009}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E4B6A0A0-CB8F-4403-A48D-15C8D5A5A009}.Debug|x86.Build.0 = Debug|Any CPU
+		{E4B6A0A0-CB8F-4403-A48D-15C8D5A5A009}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4B6A0A0-CB8F-4403-A48D-15C8D5A5A009}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{E4B6A0A0-CB8F-4403-A48D-15C8D5A5A009}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{E4B6A0A0-CB8F-4403-A48D-15C8D5A5A009}.Release|x86.ActiveCfg = Release|Any CPU
+		{E4B6A0A0-CB8F-4403-A48D-15C8D5A5A009}.Release|x86.Build.0 = Release|Any CPU
+		{67237ECF-6441-4807-B1EE-19B221470AB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67237ECF-6441-4807-B1EE-19B221470AB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67237ECF-6441-4807-B1EE-19B221470AB3}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{67237ECF-6441-4807-B1EE-19B221470AB3}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{67237ECF-6441-4807-B1EE-19B221470AB3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{67237ECF-6441-4807-B1EE-19B221470AB3}.Debug|x86.Build.0 = Debug|Any CPU
+		{67237ECF-6441-4807-B1EE-19B221470AB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67237ECF-6441-4807-B1EE-19B221470AB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67237ECF-6441-4807-B1EE-19B221470AB3}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{67237ECF-6441-4807-B1EE-19B221470AB3}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{67237ECF-6441-4807-B1EE-19B221470AB3}.Release|x86.ActiveCfg = Release|Any CPU
+		{67237ECF-6441-4807-B1EE-19B221470AB3}.Release|x86.Build.0 = Release|Any CPU
+		{F4583FC6-CDE9-4334-9BE2-635924DDEDE0}.Debug|Any CPU.ActiveCfg = Debug
+		{F4583FC6-CDE9-4334-9BE2-635924DDEDE0}.Debug|Mixed Platforms.ActiveCfg = Debug
+		{F4583FC6-CDE9-4334-9BE2-635924DDEDE0}.Debug|x86.ActiveCfg = Debug
+		{F4583FC6-CDE9-4334-9BE2-635924DDEDE0}.Debug|x86.Build.0 = Debug
+		{F4583FC6-CDE9-4334-9BE2-635924DDEDE0}.Release|Any CPU.ActiveCfg = Release
+		{F4583FC6-CDE9-4334-9BE2-635924DDEDE0}.Release|Any CPU.Build.0 = Release
+		{F4583FC6-CDE9-4334-9BE2-635924DDEDE0}.Release|Mixed Platforms.ActiveCfg = Release
+		{F4583FC6-CDE9-4334-9BE2-635924DDEDE0}.Release|Mixed Platforms.Build.0 = Release
+		{F4583FC6-CDE9-4334-9BE2-635924DDEDE0}.Release|x86.ActiveCfg = Release
+		{F4583FC6-CDE9-4334-9BE2-635924DDEDE0}.Release|x86.Build.0 = Release
+		{EF8D78E2-B4B0-4338-B49A-33FADBF6370F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF8D78E2-B4B0-4338-B49A-33FADBF6370F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF8D78E2-B4B0-4338-B49A-33FADBF6370F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{EF8D78E2-B4B0-4338-B49A-33FADBF6370F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{EF8D78E2-B4B0-4338-B49A-33FADBF6370F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EF8D78E2-B4B0-4338-B49A-33FADBF6370F}.Debug|x86.Build.0 = Debug|Any CPU
+		{EF8D78E2-B4B0-4338-B49A-33FADBF6370F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF8D78E2-B4B0-4338-B49A-33FADBF6370F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF8D78E2-B4B0-4338-B49A-33FADBF6370F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{EF8D78E2-B4B0-4338-B49A-33FADBF6370F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{EF8D78E2-B4B0-4338-B49A-33FADBF6370F}.Release|x86.ActiveCfg = Release|Any CPU
+		{EF8D78E2-B4B0-4338-B49A-33FADBF6370F}.Release|x86.Build.0 = Release|Any CPU
+		{1CBEB09B-AAEF-4FE0-9B7D-1726AB58B67E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CBEB09B-AAEF-4FE0-9B7D-1726AB58B67E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CBEB09B-AAEF-4FE0-9B7D-1726AB58B67E}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{1CBEB09B-AAEF-4FE0-9B7D-1726AB58B67E}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{1CBEB09B-AAEF-4FE0-9B7D-1726AB58B67E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1CBEB09B-AAEF-4FE0-9B7D-1726AB58B67E}.Debug|x86.Build.0 = Debug|Any CPU
+		{1CBEB09B-AAEF-4FE0-9B7D-1726AB58B67E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CBEB09B-AAEF-4FE0-9B7D-1726AB58B67E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{1CBEB09B-AAEF-4FE0-9B7D-1726AB58B67E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{1CBEB09B-AAEF-4FE0-9B7D-1726AB58B67E}.Release|x86.ActiveCfg = Release|Any CPU
+		{1CBEB09B-AAEF-4FE0-9B7D-1726AB58B67E}.Release|x86.Build.0 = Release|Any CPU
+		{8C4A534B-0A97-4D3B-8BEC-587C70881BBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C4A534B-0A97-4D3B-8BEC-587C70881BBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C4A534B-0A97-4D3B-8BEC-587C70881BBA}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{8C4A534B-0A97-4D3B-8BEC-587C70881BBA}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{8C4A534B-0A97-4D3B-8BEC-587C70881BBA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8C4A534B-0A97-4D3B-8BEC-587C70881BBA}.Debug|x86.Build.0 = Debug|Any CPU
+		{8C4A534B-0A97-4D3B-8BEC-587C70881BBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C4A534B-0A97-4D3B-8BEC-587C70881BBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C4A534B-0A97-4D3B-8BEC-587C70881BBA}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{8C4A534B-0A97-4D3B-8BEC-587C70881BBA}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{8C4A534B-0A97-4D3B-8BEC-587C70881BBA}.Release|x86.ActiveCfg = Release|Any CPU
+		{8C4A534B-0A97-4D3B-8BEC-587C70881BBA}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5BD928FE-4DCC-43CF-AC54-E16572464991} = {E8EF7251-E634-41D4-918B-1807DB2E95DE}
+		{F4583FC6-CDE9-4334-9BE2-635924DDEDE0} = {E8EF7251-E634-41D4-918B-1807DB2E95DE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E0A2D7C-4C8A-4F17-B59C-EABC60B4A633}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 11
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://davidfried.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CubiclesAPI\\Cubicles.csproj
+		SccProjectName1 = CubiclesAPI
+		SccLocalPath1 = CubiclesAPI
+		SccProjectUniqueName2 = CubiclesAPITest\\CubiclesAPITest.csproj
+		SccProjectName2 = CubiclesAPITest
+		SccLocalPath2 = CubiclesAPITest
+		SccProjectUniqueName3 = CubiclesPrinterLib\\CubiclesPrinterLib.csproj
+		SccProjectName3 = CubiclesPrinterLib
+		SccLocalPath3 = CubiclesPrinterLib
+		SccProjectUniqueName4 = Installers\\CubiclesPrinterSetupCustomAction\\CubiclesPrinterSetupCustomAction.csproj
+		SccProjectTopLevelParentUniqueName4 = CubiclesPrinter.sln
+		SccProjectName4 = Installers/CubiclesPrinterSetupCustomAction
+		SccLocalPath4 = Installers\\CubiclesPrinterSetupCustomAction
+		SccProjectUniqueName5 = PrintersEval\\PrintersEval.csproj
+		SccProjectName5 = PrintersEval
+		SccLocalPath5 = PrintersEval
+		SccProjectUniqueName6 = CubiclesPrinterWPF\\CubiclesPrinterWPF.csproj
+		SccProjectName6 = CubiclesPrinterWPF
+		SccLocalPath6 = CubiclesPrinterWPF
+		SccProjectUniqueName7 = Installers\\CubiclesPrinterSetup_x64\\CubiclesPrinterSetup_x64.vdproj
+		SccProjectTopLevelParentUniqueName7 = CubiclesPrinter.sln
+		SccProjectName7 = Installers/CubiclesPrinterSetup_x64
+		SccLocalPath7 = Installers\\CubiclesPrinterSetup_x64
+		SccProjectUniqueName8 = CubiclesPrinterUI\\CubiclesPrinterUI.csproj
+		SccProjectName8 = CubiclesPrinterUI
+		SccLocalPath8 = CubiclesPrinterUI
+		SccProjectUniqueName9 = CubiclesPrinterUIDemo\\CubiclesPrinterUIDemo.csproj
+		SccProjectName9 = CubiclesPrinterUIDemo
+		SccLocalPath9 = CubiclesPrinterUIDemo
+		SccProjectUniqueName10 = CubiclesPrinterApp\\CubiclesPrinterApp.csproj
+		SccProjectName10 = CubiclesPrinterApp
+		SccLocalPath10 = CubiclesPrinterApp
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,9 @@
+API_MainURL = http://api:52323/api/
+API_GetPrinters = http://api:52323/api/GetPrinters
+API_GetEnvironment = http://api:52323/api/GetEnvironment
+API_CheckIfCanPrint = http://api:52323/api/Print
+API_LogPrint = http://api:52323/api/LogPrint
+API_PrinterIssue = http://api:52323/api/PrinterIssue
+
+FilePath_PrinterConfig = PrintersInfo.txt
+FilePath_PrintLog = PrintLog.txts

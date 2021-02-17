@@ -1,0 +1,25 @@
+﻿<Window x:Class="CubiclesPrinterWPF.View.PrintingControlWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewModel="clr-namespace:CubiclesPrinterWPF.ViewModel"
+        mc:Ignorable="d"
+        Name="CubiclesPrintingControlMain"
+        d:DataContext="{d:DesignInstance viewModel:PrintingControlViewModel}"
+        Title="{Binding Title}" Height="280" Width="520" ResizeMode="NoResize" 
+        WindowStartupLocation="CenterScreen" Icon="/Resources/PrinterIcon.ico"
+        Loaded="Window_Loaded" Closed="CubiclesPrintingControlMain_Closed">
+    <Grid IsEnabled="{Binding IsControlsEnabled}" VerticalAlignment="Stretch">
+        <StackPanel VerticalAlignment="Center">
+            <ComboBox x:Name="ComboBoxPrinters" ItemsSource="{Binding Printers}" SelectedIndex="{Binding SelectedPrinterIndex}" IsEnabled="{Binding IsPrintersListEnabled}"/>
+            <ComboBox x:Name="ComboBoxDuplex" ItemsSource="{Binding DuplexOptions}" SelectedIndex="{Binding SelectedDuplexIndex}" IsEnabled="{Binding IsDuplexListEnabled}"/>
+            <CheckBox x:Name="ChechBoxPrintWithColor" Content="Print Colored" IsChecked="{Binding PrintWithColor}" IsEnabled="{Binding IsPrintColoredEnabled}"/>
+            <Label x:Name="LabelStatus" Content="{Binding Status}" />
+            <Label x:Name="LabelPrinterStatus" Content="{Binding PrinterStatus}" />
+            <TextBlock x:Name="LabelPrintJobStatus" Text="{Binding PrintJobStatus}" Height="60" TextWrapping="Wrap"/>
+            <Button x:Name="ButtonAdvancedSettings" Content="{Binding SettingsText}" Click="ButtonAdvancedSettings_Click" IsEnabled="{Binding IsSettingsEnabled}"/>
+            <Button x:Name="ButtonPrint" Content="Print" Click="ButtonPrint_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
