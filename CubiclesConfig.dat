@@ -1,0 +1,8 @@
+API_MainURL = http://192.168.1.232:52323/api/
+API_GetPrinters = http://192.168.1.232:52323/api/GetPrinters
+API_CheckIfCanPrint = http://192.168.1.232:52323/api/Print
+API_LogPrint = http://192.168.1.232:52323/api/LogPrint
+API_PrinterIssue = http://192.168.1.232:52323/api/PrinterIssue
+
+FilePath_PrinterConfig = C:\PrinterLogs\PrintersInfo.txt
+FilePath_PrintLog = C:\PrinterLogs\PrintLog.txt
